@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Save Highlights",
+  "version": "1.0",
+  "description": "Chrome extension that allows users to highlight text on any webpage and save highlights locally.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "highlight.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["selection.js"]
+    }
+  ]
+}

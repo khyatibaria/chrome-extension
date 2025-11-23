@@ -1,0 +1,63 @@
+/* General popup */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  width: 500px;
+  max-height: 800px;
+  margin: 0;
+  padding: 10px;
+  background: #fff;
+  color: #9b59b6;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #9b59b6;
+  text-shadow: 1px 1px 2px #fbc2eb;
+}
+
+/* Highlights container */
+#highlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.highlight-card {
+  position: relative;
+  padding: 15px 15px 30px 15px; /* leave space at bottom for URL */
+  border-radius: 8px;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+}
+
+.highlight-card .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.highlight-card .highlight-text {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.highlight-card .highlight-url {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  font-size: 12px;
+  opacity: 0.8;
+}
