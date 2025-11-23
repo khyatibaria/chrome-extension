@@ -51,7 +51,7 @@ cd chrome-extension
 
    - Highlighted text
    - URL of the page
-   - Delete/favorite using the **heart icon**
+   - Delete the highlighted text
 
 ---
 
