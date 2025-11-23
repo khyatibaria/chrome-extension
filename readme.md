@@ -1,69 +1,70 @@
-Website Highlight Saver Chrome Extension
+# Website Highlight Saver Chrome Extension
 
-A lightweight Chrome extension that allows users to highlight text on any webpage, save those highlights locally, view them in a popup, delete them.
+A lightweight Chrome extension that allows users to **highlight text on any webpage**, save those highlights locally, view them in a popup, and delete them.
 
-Task Overview
+---
+
+## Task Overview
 
 The goal is to build a Chrome extension that:
 
-Lets users select text on any webpage.
+- Lets users select text on any webpage.
+- Shows a small popup near the selection asking **“Save Highlight?”**.
+- Stores all highlights locally using `chrome.storage.local`.
+- Displays saved highlights in a **scrollable popup** when the extension icon is clicked.
+- Allows deleting individual highlights.
 
-Shows a small popup near the selection asking “Save Highlight?”.
+---
 
-Stores all highlights locally using chrome.storage.local.
+## Features
 
-Displays saved highlights in a scrollable popup when the extension icon is clicked.
+- **Highlight text** on any webpage.
+- **Save highlights locally** for later viewing.
+- **Popup interface** to manage highlights.
+- **Delete highlights** individually using a heart icon.
 
-Allows deleting individual highlights.
+---
 
-Features
+## Installation & Usage
 
-Highlight text on any webpage.
+### 1. Load Extension Locally
 
-Save highlights locally for later viewing.
+1. Clone or download the repository:
 
-Popup interface to manage highlights.
-
-Delete highlights individually.
-
-Installation & Usage
-
-1. Load Extension Locally
-
-Clone or download the repository:
-
-git clone https://github.com/<username>/chrome-extension.git
+```bash
+git clone https://github.com/khyatibaria/chrome-extension.git
 cd chrome-extension
+```
 
-Open Chrome and go to chrome://extensions/.
+2. Open Chrome and go to `chrome://extensions/`.
+3. Enable **Developer mode** (top-right).
+4. Click **Load unpacked** and select the extension folder.
 
-Enable Developer mode (top-right).
+---
 
-Click Load unpacked and select the extension folder.
+### 2. Use the Extension
 
-2. Use the Extension
+1. Highlight text on any webpage.
+2. A **small popup** appears near the selection: click **“Save Highlight?”**.
+3. Click the **extension icon** in the toolbar to open the popup.
+4. View all saved highlights:
 
-Highlight text on any webpage.
+   - Highlighted text
+   - URL of the page
+   - Delete/favorite using the **heart icon**
 
-A small popup appears near the selection: click “Save Highlight?”.
+---
 
-Click the extension icon in the toolbar to open the popup.
+## File Structure
 
-View all saved highlights:
-
-Text of the highlight
-
-URL of the page
-
-Delete/favorite using the heart icon
-
-File Structure
+```
 chrome-extension/
 │
-├── popup.html # Popup UI
-├── popup.js # JS logic
-├── popup.css # Styling for popup and cards
-├── content.js # Handles text selection and popup near selection
-├── manifest.json # Chrome extension configuration
-├── icons/ # Optional icons
-└── README.md # Project documentation
+├── popup.html       # Popup UI
+├── popup.js         # JS logic
+├── popup.css        # Styling for popup and cards
+├── content.js       # Handles text selection and popup near selection
+├── manifest.json    # Chrome extension configuration
+├── icons/           # Optional icons
+└── README.md        # Project documentation
+```
